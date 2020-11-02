@@ -48,6 +48,34 @@ class Car2:
     def get_speed(self):
 
 
+
+
+
+
+
+class Car4:
+    def __init__(self, givenname):
+        self.name = givenname  # public
+        self.__speed = 0       # private
+
+    @property
+    def speed(self):
+        print("Getting speed value")
+        return self.__speed
+
+    @speed.setter
+    def speed(self, sp):
+        print("Setting speed value")
+        self.__speed = sp
+
+
+
+
+# sc4 = Car4("Smart Car 4.0")
+# sc4.speed = 65
+# print(sc4.speed)
+
+
 c1.description = "Small-size 4-Wheel Vehicle"
 print(c1.description)
 print(c2.description)
