@@ -47,6 +47,50 @@ class Car2:
 
     def get_speed(self):
 
+       return self.__speed
+
+
+# sc = Car2("Smart Car 2.0")
+# print(sc.name)
+# # sc._status = "driving"
+# # print(sc._status)
+# # print(sc.get_status())
+#
+# sc = Car2("Smart Car 2.0")
+# sc.set_speed(55)
+# print(sc.__speed)
+
+
+class Car3:
+    def __init__(self, givenname):
+        self.name = givenname  # public
+        # self._status = "idle"  # protected
+        self.__speed = 0       # private
+
+    # def set_status(self, st):
+    #     self._status = st
+    #
+    # def get_status(self):
+    #     return self._status
+
+    def set_speed(self, sp):
+        print("Setting speed value")
+        self.__speed = sp
+
+    def get_speed(self):
+        print("Getting speed value")
+        return self.__speed
+
+    speed = property(get_speed, set_speed)
+
+sc3 = Car3("Smart Car 3.0")
+# sc3.set_speed(33)
+# print(sc3.get_speed())
+
+# sc3.speed = 40
+# print(sc3.speed + 10)
+
+
 
 c1.description = "Small-size 4-Wheel Vehicle"
 print(c1.description)
