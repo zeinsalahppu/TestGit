@@ -91,8 +91,13 @@ sc3 = Car3("Smart Car 3.0")
 # print(sc3.speed + 10)
 
 
-
 c1.description = "Small-size 4-Wheel Vehicle"
+print(c1.description)
+print(c2.description)
+print(Car5.description)
+
+
+c2.description = "Small-size 4-Wheel Vehicle"
 print(c1.description)
 print(c2.description)
 print(Car5.description)
