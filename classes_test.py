@@ -17,7 +17,35 @@ class Car:
 
     def get_speed(self):
         return self.speed
+        
+        
+# my_car = Car("Smart Car")
+# # print(type(my_car))
+#
+# # print(my_car.name)
+# # my_car.speed = 20
+# # print(my_car.speed)
+#
+# print(my_car.get_name())
+# my_car.set_speed(25)
+# print(my_car.get_speed())
 
+class Car2:
+    def __init__(self, givenname):
+        self.name = givenname  # public
+        self._status = "idle"  # protected
+        self.__speed = 0       # private
+
+    def set_status(self, st):
+        self._status = st
+
+    def get_status(self):
+        return self._status
+
+    def set_speed(self, sp):
+        self.__speed = sp
+
+    def get_speed(self):
 
 
 c1.description = "Small-size 4-Wheel Vehicle"
